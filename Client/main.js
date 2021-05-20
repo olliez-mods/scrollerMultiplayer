@@ -6,8 +6,8 @@ const path = require('path');
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 1080,
-    height: 550,
+    width: 840,
+    height: 500,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
@@ -15,7 +15,6 @@ function createWindow () {
     }
   });
 
-  mainWindow.openDevTools();
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html');
